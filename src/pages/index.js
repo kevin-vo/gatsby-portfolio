@@ -19,10 +19,10 @@ const scrollOptions = {
 }
 
 const IndexPage = () => (
-  <React.Fragment>
+  <div className="main">
     <SEO title="Kevin Vo | Software Development" />
     <Background/>
-    <div className="content" id="main">
+    <div className="content" id="home">
       <Helmet>
         <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"/>
       </Helmet>
@@ -38,27 +38,31 @@ const IndexPage = () => (
         <br/>
         <AnchorLink href='#about'>CONTACT</AnchorLink>
       </div>
-      <div style={{position: "absolute", height: "50px", width: "50px", bottom: "64px"}}>
+      <div style={{position: "absolute", top: "0", maxHeight: "1200px", height: "100%", alignItems: "flex-start", display: "flex", flexDirection: "column-reverse"}}>
         <AnchorLink href="#about">
           <Lottie
             options={scrollOptions}
+            height="50px"
+            width="50px"
             isClickToPauseDisabled={true}/>
         </AnchorLink>
       </div>
     </div>
     <div className="content" id="about">
-      <h2>I don't make things for people. I make things with people.</h2>
+      <div className="text">
+        <h2>I don't make things for people. I make things with people.</h2>
 
-      <p>
-        Beautiful things happen when we collaborate. I enjoy enabling others
-        to create by bridging vision with technology. I also love communicating
-        with others to see what their
-        goals are, and then expressing those goals through
-        elegant software solutions. So what do you say?
-      </p>
-      <AnchorLink style={{fontSize: "18px"}} href='#about'>Let's build something.</AnchorLink>
+        <p>
+          Beautiful things happen when we collaborate. I enjoy enabling others
+          to create by bridging imagination with technology. I also love communicating
+          with others to see what their
+          goals are, and then expressing those goals through
+          elegant software solutions. So what do you say?
+        </p>
+        <AnchorLink style={{fontSize: "1.17em"}} href='#about'>Let's build something.</AnchorLink>
+      </div>
     </div>
-  </React.Fragment>
+  </div>
 
 )
 

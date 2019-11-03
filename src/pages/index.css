@@ -1,7 +1,11 @@
 body {
   font-family: 'Lato', sans-serif;
   color: white;
-  background: black;
+  background-color: black;
+  background-image: url(../images/stars.png);
+  background-size: 30%;
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 h1, h2, h3, h4, h5 {
@@ -12,18 +16,25 @@ a {
   text-decoration: none;
 }
 
-.content {
-  padding: 32px;
+.main {
+  max-width: 1080px;
+  margin: 0 auto;
+  float: none;
 }
 
-.content#main {
+.content {
+  padding: 32px;
+  max-height: 1200px;
+}
+
+.content#home {
   padding: 64px;
-  width: 50vw;
+  width: 50%;
   height: 100vh;
   max-height: 1200px;
 }
 
-.content#main a, .content#about a {
+.content#home a, .content#about a {
   display: inline-block;
   font-size: 50px;
   font-weight: bold;
@@ -33,28 +44,34 @@ a {
   transition: color 500ms, padding-left 500ms;
 }
 
-.content#main a:hover, .content#about a:hover {
+.content#home a:hover, .content#about a:hover {
   color: white;
   padding-left: 10px;
 }
 
-.content#main #logo {
+.content#home #logo {
   width: 400px;
   margin-bottom: 32px;
 }
 
 .content#about {
-  position: relative;
-  top: 300px;
-  width: 50vw;
+  width: 50%;
+  height: 100vh;
+  max-height: 1200px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.content#about .text {
+  /* position: relative; */
 }
 
 /* tablet */
 @media screen and (max-width: 768px) {
-  .content#main #logo {
+  .content#home #logo {
     width: 300px;
   }
-  .content#main a {
+  .content#home a {
     font-size: 32px;
     margin-bottom: 16px;
   }
@@ -62,29 +79,35 @@ a {
 
 /* mobile */
 @media screen and (max-width: 425px) {
-  .content#main {
+  .content#home {
     width: 100%;
   }
-  .content#main #logo {
+  .content#home #logo {
     width: 100%;
   }
-  .content#main a {
+  .content#home a {
     font-size: 32px;
     margin-bottom: 16px;
   }
 
   .content#about {
     width: 100%;
+  }
+  .content#about .text {
+    position: absolute;
+    width: 100vw;
+    padding: 32px 32px 0 32px;
+    left: 0;
     background: rgba(0, 0, 0, 0.7);
   }
 }
 
 /* small height */
 @media screen and (max-height: 650px) {
-  .content#main #logo {
+  .content#home #logo {
     width: 300px;
   }
-  .content#main a {
+  .content#home a {
     font-size: 32px;
     margin-bottom: 16px;
   }
