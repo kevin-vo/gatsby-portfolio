@@ -41,3 +41,39 @@ a {
   width: 400px;
   margin-bottom: 32px;
 }
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  #logo {
+    width: 300px;
+  }
+  .content#main .links a {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 425px) {
+  .content#main {
+    width: 100%;
+  }
+  #logo {
+    width: 100%;
+  }
+  .content#main .links a {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}
+
+/* small height */
+@media screen and (max-height: 650px) {
+  #logo {
+    width: 300px;
+  }
+  .content#main .links a {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}
