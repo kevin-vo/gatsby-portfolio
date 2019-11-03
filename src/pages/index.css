@@ -1,6 +1,7 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: white;
+  background: black;
 }
 
 h1, h2, h3, h4, h5 {
@@ -22,7 +23,7 @@ a {
   max-height: 1200px;
 }
 
-.content#main .links a {
+.content#main a, .content#about a {
   display: inline-block;
   font-size: 50px;
   font-weight: bold;
@@ -32,22 +33,28 @@ a {
   transition: color 500ms, padding-left 500ms;
 }
 
-.content#main .links a:hover {
+.content#main a:hover, .content#about a:hover {
   color: white;
   padding-left: 10px;
 }
 
-#logo {
+.content#main #logo {
   width: 400px;
   margin-bottom: 32px;
 }
 
+.content#about {
+  position: relative;
+  top: 300px;
+  width: 50vw;
+}
+
 /* tablet */
 @media screen and (max-width: 768px) {
-  #logo {
+  .content#main #logo {
     width: 300px;
   }
-  .content#main .links a {
+  .content#main a {
     font-size: 32px;
     margin-bottom: 16px;
   }
@@ -58,21 +65,26 @@ a {
   .content#main {
     width: 100%;
   }
-  #logo {
+  .content#main #logo {
     width: 100%;
   }
-  .content#main .links a {
+  .content#main a {
     font-size: 32px;
     margin-bottom: 16px;
+  }
+
+  .content#about {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
   }
 }
 
 /* small height */
 @media screen and (max-height: 650px) {
-  #logo {
+  .content#main #logo {
     width: 300px;
   }
-  .content#main .links a {
+  .content#main a {
     font-size: 32px;
     margin-bottom: 16px;
   }
