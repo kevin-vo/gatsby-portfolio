@@ -30,15 +30,15 @@ const IndexPage = () => (
         <Logo/>
       </div>
       <div className="links">
-        <AnchorLink href='#about'>ABOUT</AnchorLink>
+        <AnchorLink className="animated" href='#about'>ABOUT</AnchorLink>
         <br/>
-        <Link to="/">BLOG</Link>
+        <Link className="animated" to="/">BLOG</Link>
         <br/>
-        <Link to="/">PROJECTS</Link>
+        <Link className="animated" to="/">PROJECTS</Link>
         <br/>
-        <AnchorLink href='#about'>CONTACT</AnchorLink>
+        <AnchorLink className="animated" href='#about'>CONTACT</AnchorLink>
       </div>
-      <div style={{position: "absolute", top: "0", maxHeight: "1200px", height: "100%", alignItems: "flex-start", display: "flex", flexDirection: "column-reverse"}}>
+      <div className="scroll-indicator">
         <AnchorLink href="#about">
           <Lottie
             options={scrollOptions}
@@ -59,7 +59,7 @@ const IndexPage = () => (
           goals are, and then expressing those goals through
           elegant software solutions. So what do you say?
         </p>
-        <AnchorLink style={{fontSize: "1.17em"}} href='#about'>Let's build something.</AnchorLink>
+        <AnchorLink className="animated" style={{fontSize: "1.17em"}} href='#about'>Let's build something.</AnchorLink>
       </div>
     </div>
   </div>

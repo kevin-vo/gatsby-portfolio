@@ -34,7 +34,7 @@ a {
   max-height: 1200px;
 }
 
-.content#home a, .content#about a {
+a.animated {
   display: inline-block;
   font-size: 50px;
   font-weight: bold;
@@ -44,7 +44,18 @@ a {
   transition: color 500ms, padding-left 500ms;
 }
 
-.content#home a:hover, .content#about a:hover {
+.scroll-indicator {
+  position: absolute;
+  top: 0;
+  padding-bottom: 64px;
+  max-height: 1200px;
+  height: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+a.animated:hover {
   color: white;
   padding-left: 10px;
 }
