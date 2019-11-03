@@ -1,10 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
 
-#content {
-  background: white;
-  width: 50%;
+h1, h2, h3, h4, h5 {
+  font-family: 'Lato', Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  padding: 32px;
+}
+
+.content#main {
+  padding: 64px;
+  width: 50vw;
+  height: 100vh;
+  max-height: 1200px;
+}
+
+.content#main .links a {
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #999;
+  -webkit-transition: color 500ms, padding-left 500ms;
+  transition: color 500ms, padding-left 500ms;
+}
+
+.content#main .links a:hover {
+  color: white;
+  padding-left: 10px;
 }
 
 #logo {
-  width: 300px;
+  width: 400px;
+  margin-bottom: 32px;
 }

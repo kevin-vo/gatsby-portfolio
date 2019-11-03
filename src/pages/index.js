@@ -1,21 +1,35 @@
 import React from "react"
-
-import Layout from "../components/layout"
+import { Link } from "gatsby"
+import Helmet from "react-helmet"
 import SEO from "../components/seo"
-import Image from "../components/image"
+import Logo from "../components/logo"
 import "./index.css"
 import Background from "../components/background"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const IndexPage = () => (
   <React.Fragment>
     <SEO title="Kevin Vo | Software Development" />
     <Background/>
-    <div id="content">
+    <div className="content" id="main">
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"/>
+      </Helmet>
       <div id="logo">
-        <Image />
+        <Logo/>
       </div>
-      <h1>Hi people</h1>
-    </div>    
+      <div className="links">
+        <AnchorLink href='#about'>ABOUT</AnchorLink>
+        <br/>
+        <Link to="/">BLOG</Link>
+        <br/>
+        <Link to="/">PROJECTS</Link>
+        <br/>
+        <AnchorLink href='#about'>CONTACT</AnchorLink>
+      </div>
+      <div id="about">
+      </div>
+    </div>
   </React.Fragment>
 
 )
