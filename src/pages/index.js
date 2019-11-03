@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Helmet from "react-helmet"
 import SEO from "../components/seo"
 import Logo from "../components/logo"
+import "../components/layout.css"
 import "./index.css"
 import Background from "../components/background"
 import AnchorLink from 'react-anchor-link-smooth-scroll'

@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Background from "../components/background"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./index.css"
 
@@ -10,9 +9,11 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <Background/>
     <div style={{padding: "64px"}}>
-      <h1>404</h1>
-      <h3> PAGE NOT FOUND :(</h3>
-      <Link style={{color: "#999"}} to="/">Get me outta here 🤢</Link>
+      <h1 style={{fontSize: "50px"}}>404</h1>
+      <h2> PAGE NOT FOUND :(</h2>
+      <Link className="animated" style={{fontSize: "1.17em"}} to="/">
+        <h2>Get me outta here 🤢</h2>
+      </Link>
     </div>
   </React.Fragment>
 )
