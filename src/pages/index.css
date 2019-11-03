@@ -121,9 +121,6 @@ a.animated:hover {
 
 /* small height */
 @media screen and (max-height: 650px) {
-  .content#home #logo {
-    width: 300px;
-  }
   .content#home a {
     font-size: 32px;
     margin-bottom: 16px;
