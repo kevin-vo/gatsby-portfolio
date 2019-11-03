@@ -34,7 +34,6 @@ class Background extends Component {
       <div className="background">
         <div className="earth-container">
           <Lottie
-            ref={this.earth}
             options={this.earthOptions()}/>
         </div>
         <div className="rocket-container">
