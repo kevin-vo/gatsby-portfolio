@@ -1,8 +1,10 @@
 import React from 'react'
+import Helmet from "react-helmet"
 import Lottie from 'react-lottie'
 import * as rocketLottie from '../images/lottie/rocket.json'
 import * as earthLottie from '../images/lottie/earth.json'
 import './index.css'
+import "./layout.css"
 
 
 const rocketOptions = {
@@ -27,6 +29,9 @@ const earthOptions = {
 
 export default ({ children }) => (
   <React.Fragment>
+    <Helmet>
+      <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"/>
+    </Helmet>
     <div className="wallpaper">
       <div className="background">
         <div className="earth-container">

@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
 import SEO from "../components/seo"
-import "../components/layout.css"
 import "./index.css"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Lottie from 'react-lottie'
@@ -21,9 +20,6 @@ const IndexPage = () => (
   <div className="main">
     <SEO title="Kevin Vo | Software Development" />
     <div className="content" id="home">
-      <Helmet>
-        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"/>
-      </Helmet>
       <div id="logo">
         <img
           style={{margin: 0}}
