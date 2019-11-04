@@ -27,8 +27,9 @@ const IndexPage = () => (
         <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"/>
       </Helmet>
       <div id="logo">
-
-        <img src={require("../images/kv_transparent.svg")} alt="logo"/>
+        <img
+          style={{margin: 0}}
+          src={require("../images/kv_transparent.svg")} alt="logo"/>
       </div>
       <div className="links">
         <AnchorLink className="animated" href='#about'>ABOUT</AnchorLink>
