@@ -1,12 +1,5 @@
 body {
   background-color: black;
-  font-family: 'Lato', Helvetica, sans-serif;
-  color: white;
-
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Lato', Helvetica, sans-serif;
 }
 
 a {
@@ -72,6 +65,7 @@ a.animated:hover {
   height: 100vh;
   max-height: 900px;
   padding-right: 0;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -79,9 +73,6 @@ a.animated:hover {
 .content#about .text {
   /* position: relative; */
 }
-
-/* tablet */
-
 
 /* mobile */
 @media screen and (max-width: 500px) {

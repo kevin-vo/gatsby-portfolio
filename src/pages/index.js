@@ -56,11 +56,11 @@ const IndexPage = () => (
         <p>
           Beautiful things happen when we collaborate. I enjoy enabling others
           to create by bridging imagination with technology. I also love communicating
-          with others to see what their
-          goals are, and then expressing those goals through
+          with others to determine what their
+          goals are, and then actualizing those goals through
           elegant software solutions. So what do you say?
         </p>
-        <AnchorLink className="animated" style={{fontSize: "1.17em", marginBottom: "32px"}} href='#about'>Let's build something.</AnchorLink>
+        <AnchorLink className="animated" style={{fontSize: "1.17em", marginBottom: "96px"}} href='#about'>Let's build something.</AnchorLink>
       </div>
     </div>
 
