@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
 import SEO from "../components/seo"
-import Logo from "../components/logo"
 import "../components/layout.css"
 import "./index.css"
 import Background from "../components/background"
@@ -28,7 +27,8 @@ const IndexPage = () => (
         <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"/>
       </Helmet>
       <div id="logo">
-        <Logo/>
+
+        <img src={require("../images/kv_transparent.svg")} alt="logo"/>
       </div>
       <div className="links">
         <AnchorLink className="animated" href='#about'>ABOUT</AnchorLink>
