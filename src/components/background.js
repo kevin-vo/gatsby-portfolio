@@ -31,19 +31,22 @@ class Background extends Component {
 
   render() {
     return (
-      <div className="background">
-        <div className="earth-container">
-          <Lottie
-            options={this.earthOptions()}/>
-        </div>
-        <div className="rocket-container">
-          <Lottie
-            width="175px"
-            height="237.5px"
-            options={this.rocketOptions()}/>
+      <React.Fragment>
+        <div className="wallpaper"></div>
+        <div className="background">
+          <div className="earth-container">
+            <Lottie
+              options={this.earthOptions()}/>
+          </div>
+          <div className="rocket-container">
+            <Lottie
+              width="175px"
+              height="237.5px"
+              options={this.rocketOptions()}/>
+          </div>
         </div>
 
-      </div>
+      </React.Fragment>
     );
   }
 

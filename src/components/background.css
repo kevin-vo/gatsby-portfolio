@@ -1,3 +1,15 @@
+.wallpaper {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/stars.png);
+  background-size: 50vw;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: repeat;
+}
+
 .background {
   width: 100vw;
   height: 100vh;
