@@ -8,6 +8,7 @@
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: repeat;
+  bottom: 0;
 }
 
 .background {
