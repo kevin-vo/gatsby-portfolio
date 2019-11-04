@@ -63,6 +63,7 @@ const IndexPage = () => (
         <AnchorLink className="animated" style={{fontSize: "1.17em"}} href='#about'>Let's build something.</AnchorLink>
       </div>
     </div>
+
   </div>
 
 )

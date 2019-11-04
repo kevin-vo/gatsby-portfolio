@@ -23,15 +23,14 @@ a {
 }
 
 .content {
-  padding: 32px;
-  max-height: 1200px;
+  padding: 64px;
+  max-height: 900px;
 }
 
 .content#home {
-  padding: 64px;
   width: 50%;
   height: 100vh;
-  max-height: 1200px;
+  max-height: 900px;
 }
 
 .content#home .links {
@@ -54,7 +53,7 @@ a.animated {
   position: absolute;
   top: 0;
   padding-bottom: 64px;
-  max-height: 1200px;
+  max-height: 900px;
   height: 100%;
   align-items: flex-start;
   display: flex;
@@ -74,7 +73,8 @@ a.animated:hover {
 .content#about {
   width: 50%;
   height: 100vh;
-  max-height: 1200px;
+  max-height: 900px;
+  padding-right: 0;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -84,26 +84,19 @@ a.animated:hover {
 }
 
 /* tablet */
-@media screen and (max-width: 768px) {
-  .content#home #logo {
-    width: 300px;
-  }
-  .content#home a {
-    font-size: 32px;
-    margin-bottom: 16px;
-  }
-}
+
 
 /* mobile */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .content#home {
     width: 100%;
+    padding: 32px;
   }
   .content#home #logo {
     width: 100%;
   }
   .content#home a {
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 16px;
   }
 

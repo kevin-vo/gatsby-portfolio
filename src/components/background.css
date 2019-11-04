@@ -6,7 +6,7 @@
   max-width: 1080px;
   margin: 0 auto;
   float: none;
-  max-height: 1200px;
+  max-height: 900px;
   bottom: 0;
 }
 
@@ -33,4 +33,10 @@
   position: absolute;
   right: 25%;
   bottom: 64px;
+}
+
+@media screen and (min-height: 901px) {
+  .background {
+    bottom: initial;
+  }
 }
