@@ -4,7 +4,6 @@ import Helmet from "react-helmet"
 import SEO from "../components/seo"
 import "../components/layout.css"
 import "./index.css"
-import Background from "../components/background"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Lottie from 'react-lottie'
 import * as scrollLottie from '../images/lottie/scroll.json'
@@ -21,7 +20,6 @@ const scrollOptions = {
 const IndexPage = () => (
   <div className="main">
     <SEO title="Kevin Vo | Software Development" />
-    <Background/>
     <div className="content" id="home">
       <Helmet>
         <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"/>
@@ -38,7 +36,7 @@ const IndexPage = () => (
         <br/>
         <Link className="animated" to="/">PROJECTS</Link>
         <br/>
-        <AnchorLink className="animated" href='#about'>CONTACT</AnchorLink>
+        <Link className="animated" to="/contact/">CONTACT</Link>
       </div>
       <div className="scroll-indicator">
         <AnchorLink href="#about">
@@ -64,8 +62,8 @@ const IndexPage = () => (
         <AnchorLink className="animated" style={{fontSize: "1.17em", marginBottom: "96px"}} href='#about'>Let's build something.</AnchorLink>
       </div>
     </div>
-
   </div>
+
 
 )
 
