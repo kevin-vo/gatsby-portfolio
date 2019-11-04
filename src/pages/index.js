@@ -59,7 +59,7 @@ const IndexPage = () => (
           goals are, and then actualizing those goals through
           elegant software solutions. So what do you say?
         </p>
-        <AnchorLink className="animated" style={{fontSize: "1.17em", marginBottom: "96px"}} href='#about'>Let's build something.</AnchorLink>
+        <Link to="/contact/" className="animated" style={{fontSize: "1.17em", marginBottom: "96px"}}>Let's build something.</Link>
       </div>
     </div>
   </div>
