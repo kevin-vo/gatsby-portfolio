@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import Helmet from "react-helmet"
 import SEO from "../components/seo"
 import "./index.css"
 import AnchorLink from 'react-anchor-link-smooth-scroll'

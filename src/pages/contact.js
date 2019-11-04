@@ -9,14 +9,13 @@ class Contact extends Component {
     return (
       <div className="main">
         <SEO title="Kevin Vo | Contact" />
-        <div className="content">
-          <h1> hi </h1>
+        <div className="content" id="home">
+          <h1> {"Hi, I'm Kevin. Let's chat!"} </h1>
           <ContactForm />
         </div>
       </div>
     );
   }
-
 }
 
 export default Contact;
