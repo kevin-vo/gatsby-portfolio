@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
-import Helmet from "react-helmet"
+import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
 
 class Contact extends Component {
@@ -11,6 +11,7 @@ class Contact extends Component {
         <SEO title="Kevin Vo | Contact" />
         <div className="content">
           <h1> hi </h1>
+          <ContactForm />
         </div>
       </div>
     );

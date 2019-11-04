@@ -3,8 +3,8 @@ import Helmet from "react-helmet"
 import Lottie from 'react-lottie'
 import * as rocketLottie from '../images/lottie/rocket.json'
 import * as earthLottie from '../images/lottie/earth.json'
+
 import './index.css'
-import "./layout.css"
 
 
 const rocketOptions = {
