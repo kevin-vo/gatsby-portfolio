@@ -40,7 +40,7 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <Form>
+      <Form onSubmit={this.onSubmit}>
         <Form.Group>
           <Form.Label>Name</Form.Label>
           <Form.Control
@@ -48,6 +48,7 @@ class ContactForm extends Component {
             name="name"
             value={this.state.name}
             onChange={this.onChange}
+            required
             />
         </Form.Group>
         <Form.Group>
@@ -57,6 +58,7 @@ class ContactForm extends Component {
             name="email"
             value={this.state.email}
             onChange={this.onChange}
+            required
             />
         </Form.Group>
         <Form.Group>
@@ -67,9 +69,10 @@ class ContactForm extends Component {
             name="message"
             value={this.state.message}
             onChange={this.onChange}
+            required
             />
         </Form.Group>
-        <Button type="submit" onClick={this.onSubmit}>Submit</Button>
+        <Button type="submit">Submit</Button>
       </Form>
     )
   }
