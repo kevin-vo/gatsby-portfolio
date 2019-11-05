@@ -35,13 +35,11 @@
   ],
   "license": "MIT",
   "scripts": {
+    "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "run-p start:**",
-    "start:app": "npm run develop",
-    "start:lambda": "netlify-lambda serve lambda-build",
-    "build": "gatsby build && netlify-lambda build lambda-build",
-    "build:app": "gatsby build",
-    "build:lambda": "netlify-lambda build lambda-build"
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",

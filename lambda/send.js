@@ -1,10 +1,9 @@
 exports.handler = function(event, context, callback) {
   if (event.httpMethod !== "POST") {
-    return {
-      statusCode,
-      headers,
-      body: "This was not a POST request!"
-    }
+    callback(null, {
+      statusCode: 200,
+      body: "Not a post request"
+    })
   }
 
   var nodemailer = require('nodemailer');
