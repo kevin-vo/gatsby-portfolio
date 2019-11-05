@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form } from 'react-bootstrap'
+import { Form, Alert } from 'react-bootstrap'
 import axios from 'axios'
 
 class ContactForm extends Component {
@@ -7,6 +7,9 @@ class ContactForm extends Component {
     name: "",
     email: "",
     message: "",
+    alertShow: false,
+    alertStatus: "",
+    alertMsg: "",
   }
 
   onChange = (e) => {
@@ -26,19 +29,41 @@ class ContactForm extends Component {
       message
     }).then(res => {
         if (res.data === "success") {
-          console.log("Message sent.");
-        } else if (res.data === "fail") {
-          console.log("Message failed to send.");
+          this.handleSuccessfulSubmission();
         } else {
-          console.log(res)
+          this.handleFailedSubmission();
         }
       })
       .catch(error => {
         console.log(error);
+        this.handleFailedSubmission();
       })
   }
 
+  clearAlerts = () => {
+    this.setState({
+      alertShow: false
+    });
+  }
+
+  handleSuccessfulSubmission = () => {
+    this.setState({
+      alertShow: true,
+      alertStatus: "success",
+      alertMsg: "Message sent successfully. I will get back to you as soon as I can!"
+    });
+  }
+
+  handleFailedSubmission = () => {
+    this.setState({
+      alertShow: true,
+      alertStatus: "danger",
+      alertMsg: "Message failed to send. Please try again or contact me directly at hey@vokev.in"
+    });
+  }
+
   render() {
+    const {alertShow, alertStatus, alertMsg} = this.state;
     return (
       <Form onSubmit={this.onSubmit}>
         <Form.Group>
@@ -72,6 +97,11 @@ class ContactForm extends Component {
             required
             />
         </Form.Group>
+        <Alert
+          show={alertShow}
+          variant={alertStatus}>
+          {alertMsg}
+        </Alert>
         <button className="themed" type="submit">Submit</button>
       </Form>
     )

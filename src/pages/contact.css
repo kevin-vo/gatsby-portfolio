@@ -45,3 +45,8 @@ button.themed:hover {
 button.themed:focus {
   outline: none;
 }
+
+#contact-form .alert {
+  width: 100%;
+  max-width: 640px;
+}
