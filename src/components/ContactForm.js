@@ -20,6 +20,7 @@ class ContactForm extends Component {
 
   sendMail = () => {
     const {name, email, message} = this.state;
+    console.log(process.env.GATSBY_LAMBDA_ENDPOINT);
     axios.post(process.env.GATSBY_LAMBDA_ENDPOINT + "/.netlify/functions/send", {
       name,
       email,
