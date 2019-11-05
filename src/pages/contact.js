@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from "gatsby"
 import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
+import "./contact.css"
 
 class Contact extends Component {
 
@@ -9,8 +10,8 @@ class Contact extends Component {
     return (
       <div className="main">
         <SEO title="Kevin Vo | Contact" />
-        <div className="content">
-          <h1> {"Hi, I'm Kevin. Let's chat!"} </h1>
+        <div className="content" id="contact-form">
+          <h2> {"Hey, I'm Kevin. Let's chat!"} </h2>
           <ContactForm />
         </div>
       </div>

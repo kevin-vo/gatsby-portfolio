@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Button } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 import axios from 'axios'
 
 class ContactForm extends Component {
@@ -72,7 +72,7 @@ class ContactForm extends Component {
             required
             />
         </Form.Group>
-        <Button type="submit">Submit</Button>
+        <button className="themed" type="submit">Submit</button>
       </Form>
     )
   }

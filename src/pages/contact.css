@@ -1,0 +1,47 @@
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-form .form-group {
+  width: 100%;
+  max-width: 640px;
+}
+
+#contact-form h2 {
+  text-align: center;
+}
+
+#contact-form .form-control {
+  background-color: rgba(153, 153, 153, 0.5);
+  border: none;
+  color: white;
+  transition: all 0.3s;
+  border-radius: 0.15rem;
+}
+
+#contact-form .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+  color: black;
+}
+
+button.themed {
+  background: black;
+  padding: 10px 15px 10px 15px;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 0.15rem;
+  transition: all 0.3s;
+}
+
+button.themed:hover {
+  color: black;
+  background: white;
+}
+
+button.themed:focus {
+  outline: none;
+}
