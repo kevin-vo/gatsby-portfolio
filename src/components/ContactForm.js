@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Form, Button } from 'react-bootstrap'
+import axios from 'axios'
 
 class ContactForm extends Component {
   state = {
@@ -14,6 +15,27 @@ class ContactForm extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
+    this.sendMail();
+  }
+
+  sendMail = () => {
+    const {name, email, message} = this.state;
+    axios.post(process.env.GATSBY_LAMBDA_ENDPOINT + "/.netlify/functions/send", {
+      name,
+      email,
+      message
+    }).then(res => {
+        if (res.data === "success") {
+          console.log("Message sent.");
+        } else if (res.data === "fail") {
+          console.log("Message failed to send.");
+        } else {
+          console.log(res)
+        }
+      })
+      .catch(error => {
+        console.log(error);
+      })
   }
 
   render() {
