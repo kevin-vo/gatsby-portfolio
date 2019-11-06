@@ -36,17 +36,21 @@ class Wallpaper extends Component {
 
   handleScroll = () => {
     if (!ticking) {
-      window.requestAnimationFrame(() => {
-        var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        document.getElementById("rocket-container").style.bottom = 128 + (0.4 * document.documentElement.scrollTop) + "px";
-        document.getElementById("earth-container").style.bottom = 64 + (-0.05 * document.documentElement.scrollTop) + "px";
-        document.getElementById("earth-container").style.width = 100 + (-0.07 * document.documentElement.scrollTop) + "px";
-        document.getElementById("earth-container").style.height = 100 + (-0.07 * document.documentElement.scrollTop) + "px";
-        ticking = false;
-      });
       ticking = true;
+      this.updateAnimation();
+      setTimeout(() => {
+        ticking = false;
+      }, 50)
     }
   };
+
+  updateAnimation = () => {
+    var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    document.getElementById("rocket-container").style.bottom = 128 + (0.4 * document.documentElement.scrollTop) + "px";
+    document.getElementById("earth-container").style.bottom = 64 + (-0.05 * document.documentElement.scrollTop) + "px";
+    document.getElementById("earth-container").style.width = 100 + (-0.07 * document.documentElement.scrollTop) + "px";
+    document.getElementById("earth-container").style.height = 100 + (-0.07 * document.documentElement.scrollTop) + "px";
+  }
 
   render() {
     return (
