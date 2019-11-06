@@ -26,7 +26,7 @@ const Header = () => (
       </Link>
       <div style={{height: "100%", float: "right", display: "flex", alignItems: "center"}}>
         <Link to="/" style={{color: "white"}}>
-          <i class="fas fa-times fa-lg"></i>
+          <i className="fas fa-times fa-lg"></i>
         </Link>
       </div>
     </div>

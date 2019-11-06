@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from "gatsby"
 import ContactForm from "../components/ContactForm"
 import Header from "../components/Header"
 import SEO from "../components/seo"
