@@ -11,7 +11,6 @@ const headerStyle = {
 }
 
 const contentStyle = {
-  padding: "0 64px 0 64px",
   maxWidth: "1080px",
   height: "100%",
   width: "100%",
@@ -19,7 +18,7 @@ const contentStyle = {
 
 const Header = () => (
   <div style={headerStyle}>
-    <div style={contentStyle}>
+    <div className="header-container" style={contentStyle}>
       <Link to="/">
         <img
           style={{margin: 0, height: "100%"}}
