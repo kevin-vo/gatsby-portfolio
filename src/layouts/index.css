@@ -1,4 +1,4 @@
-.wallpaper {
+#wallpaper {
   z-index: -1;
   position: fixed;
   width: 100vw;
@@ -23,7 +23,7 @@
   bottom: 0;
 }
 
-.background .rocket-container {
+.background #rocket-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,17 +35,22 @@
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   transform: translateX(50%);
+  transition: bottom 0.5s ease-out;
 }
 
-.background .earth-container {
+.background #earth-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100px;
   height: 100px;
   position: absolute;
-  right: 25%;
+  right: 27%;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  transform: translateX(50%);
   bottom: 64px;
+  transition: all 0.5s ease-out;
 }
 
 @media screen and (min-height: 901px) {
