@@ -3,11 +3,12 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
+  min-height: 600px;
   background-image: url(../images/stars.png);
   background-size: 500px;
   background-position: bottom;
   background-repeat: repeat;
-  bottom: 0;
+  top: 0;
   left: 0;
   display: flex;
   justify-content: center;
@@ -16,6 +17,7 @@
 .background {
   width: 100vw;
   height: 100vh;
+  min-height: 600px;
   position: absolute;
   z-index: -1;
   max-width: 1080px;

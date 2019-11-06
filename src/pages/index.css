@@ -71,9 +71,6 @@ a.animated:hover {
   flex-direction: column-reverse;
 }
 
-.content#about .text {
-  /* position: relative; */
-}
 
 .header-container {
   padding: 0 64px;
