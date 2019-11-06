@@ -54,6 +54,9 @@ const IndexPage = () => (
         <Link to="/contact/" className="animated" style={{fontSize: "1.17em", marginBottom: "96px"}}>Let's build something.</Link>
       </div>
     </div>
+    <div className="content" id="featured-projects">
+      <h2> Here is some of my recent work. </h2>
+    </div>
   </div>
 
 
