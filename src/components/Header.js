@@ -24,7 +24,11 @@ const Header = () => (
           style={{margin: 0, height: "100%"}}
           src={require("../images/kv_transparent.svg")} alt="logo"/>
       </Link>
-      <h1 style={{float: "right"}}>x</h1>
+      <div style={{height: "100%", float: "right", display: "flex", alignItems: "center"}}>
+        <Link to="/" style={{color: "white"}}>
+          <i class="fas fa-times fa-lg"></i>
+        </Link>
+      </div>
     </div>
   </div>
 )
