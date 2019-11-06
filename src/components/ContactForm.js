@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Alert } from 'react-bootstrap'
+import { Form, Alert, Spinner } from 'react-bootstrap'
 import axios from 'axios'
 
 class ContactForm extends Component {
@@ -10,6 +10,7 @@ class ContactForm extends Component {
     alertShow: false,
     alertStatus: "",
     alertMsg: "",
+    isSending: false,
   }
 
   onChange = (e) => {
@@ -23,6 +24,8 @@ class ContactForm extends Component {
 
   sendMail = () => {
     const {name, email, message} = this.state;
+    this.clearAlerts();
+    this.setSendingState(true);
     axios.post(process.env.GATSBY_LAMBDA_ENDPOINT + "/.netlify/functions/send", {
       name,
       email,
@@ -33,10 +36,11 @@ class ContactForm extends Component {
         } else {
           this.handleFailedSubmission();
         }
+        this.setSendingState(false);
       })
       .catch(error => {
-        console.log(error);
         this.handleFailedSubmission();
+        this.setSendingState(false);
       })
   }
 
@@ -62,8 +66,14 @@ class ContactForm extends Component {
     });
   }
 
+  setSendingState = (isSending) => {
+    this.setState({
+      isSending
+    });
+  }
+
   render() {
-    const {alertShow, alertStatus, alertMsg} = this.state;
+    const {isSending, alertShow, alertStatus, alertMsg} = this.state;
     return (
       <Form onSubmit={this.onSubmit}>
         <Form.Group>
@@ -98,11 +108,25 @@ class ContactForm extends Component {
             />
         </Form.Group>
         <Alert
-          show={alertShow}
+          style={{display: (alertShow ? "initial" : "none")}}
           variant={alertStatus}>
           {alertMsg}
         </Alert>
         <button className="themed" type="submit">Submit</button>
+        <div
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            height: "100vh",
+            width: "100%",
+            background: "rgba(0, 0, 0, 0.8)",
+            display: (isSending ? "flex" : "none"),
+            justifyContent: "center",
+            alignItems: "center",
+          }}>
+          <Spinner animation="border" variant="light"/>
+        </div>
       </Form>
     )
   }
