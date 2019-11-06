@@ -33,6 +33,7 @@ class ContactForm extends Component {
     }).then(res => {
         if (res.data === "success") {
           this.handleSuccessfulSubmission();
+          this.clearForm();
         } else {
           this.handleFailedSubmission();
         }
@@ -47,6 +48,14 @@ class ContactForm extends Component {
   clearAlerts = () => {
     this.setState({
       alertShow: false
+    });
+  }
+
+  clearForm = () => {
+    this.setState({
+      name: "",
+      email: "",
+      message: "",
     });
   }
 
