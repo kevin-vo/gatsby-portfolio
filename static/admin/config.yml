@@ -10,11 +10,52 @@ collections:
     label: "Blog"
     folder: "content/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-     preview: false
+    slug: "{{date}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "image"
+        allow_multiple: false
+      - { label: "Description", name: "description", widget: "string" }
+      - label: "Color Theme"
+        name: "color"
+        widget: "string"
+        default: "#000000"
+        hint: "Hex format (#FFFFFF)"
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "image"
+        allow_multiple: false
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "featured"
+    label: "Featured"
+    folder: "content/featured"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "relation"
+        collection: "projects"
+        searchFields: "title"
+        valueFields: "title"
+      - { label: "Description", name: "description", widget: "string" }
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "image"
+        allow_multiple: false
