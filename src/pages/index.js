@@ -5,6 +5,7 @@ import "./index.css"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Lottie from 'react-lottie'
 import * as scrollLottie from '../images/lottie/scroll.json'
+import FeaturedProject from '../components/FeaturedProject'
 
 const scrollOptions = {
   loop: true,
@@ -55,7 +56,8 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="content" id="featured-projects">
-      <h2> Here is some of my recent work. </h2>
+      <h2> Here are some of my recent work. </h2>
+      <FeaturedProject />
     </div>
   </div>
 

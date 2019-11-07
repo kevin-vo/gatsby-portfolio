@@ -1,0 +1,40 @@
+#featured-projects .cell {
+  margin: 8px;
+  background: #999;
+  border: 0.3rem solid #999;
+  border-radius: 0.3rem;
+  width: 47%;
+  min-width: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+#featured-projects .cell:hover {
+  background: #DDD;
+  border-color: #DDD;
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 500px) {
+  #featured-projects .cell {
+    width: 100%;
+    margin: 8px 0;
+    height: 250px;
+  }
+}
+
+@media (hover: none) {
+  #featured-projects .cell {
+    background: #DDD;
+    border-color: #DDD;
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}

@@ -45,7 +45,6 @@ class Wallpaper extends Component {
   };
 
   updateAnimation = () => {
-    var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     document.getElementById("rocket-container").style.bottom = 128 + (0.4 * document.documentElement.scrollTop) + "px";
     document.getElementById("earth-container").style.bottom = 64 + (-0.05 * document.documentElement.scrollTop) + "px";
     document.getElementById("earth-container").style.width = 100 + (-0.07 * document.documentElement.scrollTop) + "px";
