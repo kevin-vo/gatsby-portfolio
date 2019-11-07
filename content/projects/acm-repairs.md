@@ -2,6 +2,7 @@
 title: ACM Repairs
 date: 2019-11-07T02:34:41.870Z
 thumbnail: /img/logo512.png
+color: '#69beff'
 description: ReactJS netlify netlify-cms netlify-functions mailgun mapboxGL
 ---
 <https://acmrepairs.com/>
