@@ -53,7 +53,7 @@ collections:
         widget: "relation"
         collection: "projects"
         searchFields: ["title"]
-        valueFields: "title"
+        valueField: "title"
         displayFields: ["title"]
       - { label: "Description", name: "description", widget: "string" }
       - label: "Thumbnail"
