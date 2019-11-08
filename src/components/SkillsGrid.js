@@ -53,7 +53,7 @@ const SkillsGrid = () => (
       </p>
       <h4> Languages and Frameworks: </h4>
       <p>
-        React, Gatsby, HTML, JS, Java, Python
+        React, Gatsby, HTML, CSS, JS, Java, Python
       </p>
       <h4> Tools: </h4>
         <ul>
