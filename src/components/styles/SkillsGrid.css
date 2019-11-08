@@ -28,7 +28,6 @@
 }
 
 .skill-cell h4 {
-  color: #2720b3;
   margin-bottom: 8px;
 }
 
@@ -48,13 +47,12 @@
 }
 
 .skill-cell svg path {
-  /* fill: #2720b3; */
   fill: transparent;
-  stroke: #2720b3;
   stroke-width: 50;
 }
 
 .skill-cell svg#one path {
+  stroke: #fcd703;
   stroke-dasharray: 8304.8681640625;
   stroke-dashoffset: 8304.8681640625;
   transition: stroke-dashoffset 10s linear,
@@ -63,6 +61,7 @@
 }
 
 .skill-cell svg#two path {
+  stroke: #0398fc;
   stroke-dasharray: 8675.5478515625;
   stroke-dashoffset: 8675.5478515625;
   transition: stroke-dashoffset 14s linear,
@@ -71,6 +70,7 @@
 }
 
 .skill-cell svg#three path {
+  stroke: #fc034e;
   stroke-dasharray: 5346.419921875;
   stroke-dashoffset: 5346.419921875;
   transition: stroke-dashoffset 4.5s linear,

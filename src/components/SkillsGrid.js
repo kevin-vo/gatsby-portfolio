@@ -2,19 +2,17 @@ import React from 'react';
 import './styles/SkillsGrid.css'
 import VisibilitySensor from 'react-visibility-sensor'
 
-const logo = document.querySelectorAll(".skill-cell svg path")
-
-for (var i=0; i < logo.length; i++) {
-  console.log(logo[i].getTotalLength());
-}
-
 const onChange1 = (isVisible, id) => {
-  console.log(id);
-  console.log(isVisible);
   if (isVisible) {
     document.querySelector(`.skill-cell #${id} path`).style.strokeDashoffset = 0;
-    document.querySelector(`.skill-cell #${id} path`).style.fill = "#2720b3";
     document.querySelector(`.skill-cell #${id} path`).style.strokeWidth = 0;
+    if (id === "one") {
+      document.querySelector(`.skill-cell #${id} path`).style.fill = "#fcd703";
+    } else if (id === "two") {
+      document.querySelector(`.skill-cell #${id} path`).style.fill = "#0398fc";
+    } else {
+      document.querySelector(`.skill-cell #${id} path`).style.fill = "#fc034e";
+    }
   }
 }
 
