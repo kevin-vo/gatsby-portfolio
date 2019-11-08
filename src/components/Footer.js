@@ -9,6 +9,25 @@ const Footer = () => (
         style={{marginBottom: "16px", height: "32px"}}
         src={require("../images/kv_transparent.svg")} alt="logo"/>
     </Link>
+    <div className="nav">
+      <p>
+        <Link className="animated" to="/">
+          HOME
+        </Link>
+        {' | '}
+        <Link className="animated" to="/">
+          BLOG
+        </Link>
+        {' | '}
+        <Link className="animated" to="/">
+          PROJECTS
+        </Link>
+        {' | '}
+        <Link className="animated" to="/contact/">
+          CONTACT
+        </Link>
+      </p>
+    </div>
     <div className="socials">
       <a href="https://github.com/kevin-vo" target="_blank">
         <button className="themed"><i className="fab fa-github-alt"></i></button>
@@ -23,8 +42,9 @@ const Footer = () => (
         <button className="themed"><i className="fab fa-instagram fa-lg"></i></button>
       </a>
     </div>
+
     <p>
-      <span role="img" aria-label="Rocket">🚀</span>{' '}
+      <span role="img" aria-label="Rocket">🚀</span>
       by Kevin Vo - 2019{' '}
       <i className="far fa-copyright"></i>{' '}
     </p>

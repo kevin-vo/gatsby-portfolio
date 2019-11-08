@@ -69,14 +69,15 @@ const SkillsGrid = () => (
       <h3> Other </h3>
         <p>
           I have an aptitude for learning by doing. I love
-          jumping in the deep end and improvising as I go. {"It's"} quick and dirty,
-          but I always get the job done. In addition, I am passionate about
+          jumping in the deep end and improvising as I go. In addition,
+          I am passionate about
           collaborating with others to ensure that the cloud is accessible
           for anyone and everyone.
         </p>
         <h4> Tools: </h4>
           <ul>
-            <li>Lots of Google searches</li>
+            <li>Lots of Google Searches</li>
+            <li>Energy Drinks</li>
           </ul>
     </div>
   </div>

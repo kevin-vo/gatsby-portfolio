@@ -12,7 +12,7 @@
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  margin: 0 4px;
+  margin: 0 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,18 @@
 .footer .socials {
   display: flex;
   margin-bottom: 16px;
+}
+
+.footer .nav {
+  margin-bottom: 16px;
+}
+
+.footer .nav a {
+  font-size: 16px;
+}
+
+.footer .nav a:hover {
+  padding-left: 0;
 }
 
 .footer p {

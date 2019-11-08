@@ -48,10 +48,13 @@ const IndexPage = () => (
 
         <p>
           Beautiful things happen when we collaborate. I enjoy enabling others
-          to create by bridging imagination with technology. I also love communicating
-          with others to determine what their
-          goals are, and then actualizing those goals through
-          elegant software solutions. So what do you say?
+          to create by bringing their imagination to life.
+          I love to help people push their creative boundaries by bridging
+          their vision with elegant software solutions.
+
+        </p>
+        <p>
+          So what do you say. Wanna make cool stuff?
         </p>
         <Link to="/contact/" className="animated" style={{fontSize: "1.17em", marginBottom: "96px"}}>Let's build something.</Link>
       </div>
@@ -78,7 +81,7 @@ const IndexPage = () => (
         <h2> Let's start a conversation. </h2>
         <p>
           I am currently open to freelance projects and part/full-time positions.
-          Want to hire me? Have burning questions? Want to get lunch?
+          Want to hire me? Still need convincing? Want to just say hi?
           Please reach out. I would love to make your life easier.
         </p>
       </div>
