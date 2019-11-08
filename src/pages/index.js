@@ -73,6 +73,19 @@ const IndexPage = () => (
       <h2> Here are some of my recent work. </h2>
       <FeaturedProject />
     </div>
+    <div className="content" id="skills">
+      <div className="text">
+        <h2> Let's start a conversation. </h2>
+        <p>
+          I am currently open to freelance projects and part/full-time positions.
+          Want to hire me? Have burning questions? Want to get lunch?
+          Please reach out. I would love to make your life easier.
+        </p>
+      </div>
+      <Link to="/contact/">
+        <button className="themed">Contact me</button>
+      </Link>
+    </div>
   </div>
 
 
