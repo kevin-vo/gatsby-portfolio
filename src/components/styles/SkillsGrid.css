@@ -44,27 +44,36 @@
 
 .skill-cell svg {
   margin-bottom: 32px;
+  width: 100%;
 }
 
 .skill-cell svg path {
   /* fill: #2720b3; */
-  fill: none;
+  fill: transparent;
   stroke: #2720b3;
-  stroke-width: 60;
-  transition: all 4s;
+  stroke-width: 50;
 }
 
 .skill-cell svg#one path {
-  stroke-dasharray: 14002.498046875;
-  stroke-dashoffset: 14002.498046875;
+  stroke-dasharray: 8304.8681640625;
+  stroke-dashoffset: 8304.8681640625;
+  transition: stroke-dashoffset 10s linear,
+  fill 1s ease 4.5s,
+  stroke-width 1s ease 4.5s;
 }
 
 .skill-cell svg#two path {
   stroke-dasharray: 8675.5478515625;
   stroke-dashoffset: 8675.5478515625;
+  transition: stroke-dashoffset 14s linear,
+  fill 1s ease 4.5s,
+  stroke-width 1s ease 4.5s;
 }
 
 .skill-cell svg#three path {
-  stroke-dasharray: 9895.447265625;
-  stroke-dashoffset: 9895.447265625;
+  stroke-dasharray: 5346.419921875;
+  stroke-dashoffset: 5346.419921875;
+  transition: stroke-dashoffset 4.5s linear,
+  fill 1s ease 4.5s,
+  stroke-width 1s ease 4.5s;
 }

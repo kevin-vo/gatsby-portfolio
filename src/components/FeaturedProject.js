@@ -22,7 +22,7 @@ const thumbnailContainerStyle = (src) => {
 }
 
 const Project = (node) => {
-  const {title, description, thumbnail} = node;
+  const {title, thumbnail} = node;
   return(
     <Link key={title} className="cell" to={"/"}>
       <div className="thumbnail-container" style={thumbnailContainerStyle(thumbnail)}/>
