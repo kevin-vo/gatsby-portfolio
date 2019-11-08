@@ -94,3 +94,10 @@
     width: 80%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .content#skills .text {
+    text-align: left;
+    width: 100%;
+  }
+}
