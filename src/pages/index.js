@@ -6,6 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Lottie from 'react-lottie'
 import * as scrollLottie from '../images/lottie/scroll.json'
 import FeaturedProject from '../components/FeaturedProject'
+import SkillsGrid from '../components/SkillsGrid'
 
 const scrollOptions = {
   loop: true,
@@ -66,6 +67,7 @@ const IndexPage = () => (
           are invaluable.
         </p>
       </div>
+      <SkillsGrid />
     </div>
     <div className="content" id="featured-projects">
       <h2> Here are some of my recent work. </h2>
