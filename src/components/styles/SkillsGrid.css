@@ -5,7 +5,6 @@
   border-radius: 0.3rem;
 }
 .skill-cell {
-  /* width: 200px; */
   color: black;
   flex-grow: 1;
   flex-shrink: 0;
@@ -76,4 +75,22 @@
   transition: stroke-dashoffset 4.5s linear,
   fill 1s ease 4.5s,
   stroke-width 1s ease 4.5s;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  .skill-cell {
+    border-left: none;
+    border-bottom: 0.1px solid #999;
+  }
+
+  .skill-cell#last {
+    border-bottom: 0;
+  }
+  .content#skills .text {
+    width: 80%;
+  }
 }

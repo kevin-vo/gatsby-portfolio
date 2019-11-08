@@ -79,6 +79,7 @@ a.animated:hover {
 }
 
 .content#skills {
+  max-height: none;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -116,11 +117,8 @@ a.animated:hover {
     padding: 0 32px;
   }
 
-
-  .content#skills {
-    text-align: left;
-  }
   .content#skills .text {
+    text-align: left;
     width: 100%;
   }
 

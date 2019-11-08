@@ -60,7 +60,7 @@ const IndexPage = () => (
       <div className="text">
         <h2> Here are things I am good at. </h2>
         <p>
-          Technology is always moving (quicker than me, I will admit!).
+          Technology is always moving (a little too quickly I might add!).
           In an effort to keep up, here are some skills that I have picked up
           throughout the years. I am always learning and willing to engulf
           myself with new tools. Client projects that challenge me to expand my toolbox

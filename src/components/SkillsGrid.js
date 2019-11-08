@@ -69,8 +69,8 @@ const SkillsGrid = () => (
       <h3> Other </h3>
         <p>
           I have an aptitude for learning by doing. I love
-          jumping in the deep end and improvising as I go. It's quick, it's
-          dirty, but I get the job done. In addition, I am passionate about
+          jumping in the deep end and improvising as I go. {"It's"} quick and dirty,
+          but I always get the job done. In addition, I am passionate about
           collaborating with others to ensure that the cloud is accessible
           for anyone and everyone.
         </p>
