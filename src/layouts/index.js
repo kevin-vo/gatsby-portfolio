@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from "react-helmet"
 import Wallpaper from '../components/Wallpaper'
+import Footer from '../components/Footer'
 
 import './index.css'
 
@@ -13,5 +14,6 @@ export default ({ children }) => (
     <Wallpaper />
 
     {children}
+    <Footer />
   </React.Fragment>
 );
