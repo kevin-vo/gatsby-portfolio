@@ -1,7 +1,7 @@
 .skills-container {
   display: flex;
   width: 100%;
-  background: #DDD;
+  background: white;
   border-radius: 0.3rem;
 }
 .skill-cell {
@@ -23,10 +23,12 @@
 }
 
 .skill-cell h3 {
-  margin-bottom: 16px;
+
+  margin-bottom: 8px;
 }
 
 .skill-cell h4 {
+  color: #2720b3;
   margin-bottom: 8px;
 }
 
@@ -38,4 +40,31 @@
 
 .skill-cell li {
   margin-bottom: 4px;
+}
+
+.skill-cell svg {
+  margin-bottom: 32px;
+}
+
+.skill-cell svg path {
+  /* fill: #2720b3; */
+  fill: none;
+  stroke: #2720b3;
+  stroke-width: 60;
+  transition: all 4s;
+}
+
+.skill-cell svg#one path {
+  stroke-dasharray: 14002.498046875;
+  stroke-dashoffset: 14002.498046875;
+}
+
+.skill-cell svg#two path {
+  stroke-dasharray: 8675.5478515625;
+  stroke-dashoffset: 8675.5478515625;
+}
+
+.skill-cell svg#three path {
+  stroke-dasharray: 9895.447265625;
+  stroke-dashoffset: 9895.447265625;
 }

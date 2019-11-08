@@ -15,8 +15,8 @@
 }
 
 #featured-projects .cell:hover {
-  background: #DDD;
-  border-color: #DDD;
+  background: white;
+  border-color: white;
   filter: grayscale(0);
   opacity: 1;
 }
@@ -32,8 +32,8 @@
 
 @media (hover: none) {
   #featured-projects .cell {
-    background: #DDD;
-    border-color: #DDD;
+    background: white;
+    border-color: white;
     filter: grayscale(0);
     opacity: 1;
   }
