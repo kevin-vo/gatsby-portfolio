@@ -55,6 +55,18 @@ const IndexPage = () => (
         <Link to="/contact/" className="animated" style={{fontSize: "1.17em", marginBottom: "96px"}}>Let's build something.</Link>
       </div>
     </div>
+    <div className="content" id="skills">
+      <div className="text">
+        <h2> Here are things I am good at. </h2>
+        <p>
+          Technology is always moving (quicker than me, I will admit!).
+          In an effort to keep up, here are some skills that I have picked up
+          throughout the years. I am always learning and willing to engulf
+          myself with new tools. Client projects that challenge me to expand my toolbox
+          are invaluable.
+        </p>
+      </div>
+    </div>
     <div className="content" id="featured-projects">
       <h2> Here are some of my recent work. </h2>
       <FeaturedProject />
