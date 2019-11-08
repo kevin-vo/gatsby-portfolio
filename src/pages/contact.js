@@ -15,7 +15,7 @@ class Contact extends Component {
           <div className="content" id="contact-form">
             <h2> {"Hey, I'm Kevin. Let's chat!"} </h2>
             <p>
-              You can also email me directy:{' '}
+              You can also email me directly:{' '}
               <a className="animated" href="mailto:hey@vokev.in">
                 hey@vokev.in
               </a>
