@@ -71,14 +71,9 @@ const SkillsGrid = () => (
           I have an aptitude for learning by doing. I love
           jumping in the deep end and improvising as I go. In addition,
           I am passionate about
-          collaborating with others to ensure that the cloud is accessible
-          for anyone and everyone.
+          collaborating with others to ensure that anyone who wants to
+          make a web presence has the means to do so. 
         </p>
-        <h4> Tools: </h4>
-          <ul>
-            <li>Lots of Google Searches</li>
-            <li>Energy Drinks</li>
-          </ul>
     </div>
   </div>
 )
