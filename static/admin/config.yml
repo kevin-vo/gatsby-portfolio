@@ -14,6 +14,10 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Path"
+        name: "path"
+        widget: "string"
+        hint: "Relative path (ex. '/post-one')"
       - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"
@@ -29,6 +33,10 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Path"
+        name: "path"
+        widget: "string"
+        hint: "Relative path (ex. '/project-one')"
       - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"

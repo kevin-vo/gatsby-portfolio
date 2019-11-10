@@ -29,7 +29,7 @@ const IndexPage = () => (
       <div className="links">
         <AnchorLink className="animated" href='#about'>ABOUT</AnchorLink>
         <Link className="animated" to="/">BLOG</Link>
-        <Link className="animated" to="/">PROJECTS</Link>
+        <Link className="animated" to="/projects/">PROJECTS</Link>
         <Link className="animated" to="/contact/">CONTACT</Link>
       </div>
       <div className="scroll-indicator">

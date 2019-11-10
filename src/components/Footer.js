@@ -19,7 +19,7 @@ const Footer = () => (
           BLOG
         </Link>
         {' | '}
-        <Link className="animated" to="/">
+        <Link className="animated" to="/projects/">
           PROJECTS
         </Link>
         {' | '}
