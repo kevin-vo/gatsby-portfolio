@@ -1,0 +1,26 @@
+.projects-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+.project-cell {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.project-text h2 {
+  margin-bottom: 8px;
+}
+
+.project-text p {
+  margin-bottom: 0px;
+}
+
+.project-thumbnail {
+  height: 400px;
+  background: white;
+  margin-bottom: 16px;
+}

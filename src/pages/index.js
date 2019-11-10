@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import "./index.css"
+import "./styles/index.css"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Lottie from 'react-lottie'
 import * as scrollLottie from '../images/lottie/scroll.json'

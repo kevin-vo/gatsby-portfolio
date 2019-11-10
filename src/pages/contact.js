@@ -2,7 +2,7 @@ import React from 'react'
 import ContactForm from "../components/ContactForm"
 import Header from "../components/Header"
 import SEO from "../components/seo"
-import "./contact.css"
+import "./styles/contact.css"
 
 const Contact = () => (
   <React.Fragment>
