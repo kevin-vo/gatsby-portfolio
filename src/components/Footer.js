@@ -29,16 +29,16 @@ const Footer = () => (
       </p>
     </div>
     <div className="socials">
-      <a href="https://github.com/kevin-vo" target="_blank">
+      <a href="https://github.com/kevin-vo" target="_blank" rel="noopener noreferrer" >
         <button className="themed"><i className="fab fa-github-alt"></i></button>
       </a>
-      <a href="mailto:hey@vokev.in" target="_blank">
+      <a href="mailto:hey@vokev.in">
         <button className="themed"><i className="fas fa-envelope"></i></button>
       </a>
-      <a href="/" target="_blank">
+      <a href="/">
         <button className="themed"><i className="fas fa-file"></i></button>
       </a>
-      <a href="https://www.instagram.com/vokev.in/" target="_blank">
+      <a href="https://www.instagram.com/vokev.in/" target="_blank" rel="noopener noreferrer" >
         <button className="themed"><i className="fab fa-instagram fa-lg"></i></button>
       </a>
     </div>
