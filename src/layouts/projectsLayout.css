@@ -1,6 +1,7 @@
 #projects .content {
   padding-top: 32px;
   display: flex;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 #projects .links {

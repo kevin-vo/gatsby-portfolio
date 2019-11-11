@@ -44,7 +44,7 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div style={contentStyle}>
+    <div>
       <SEO title={`Kevin Vo | ${frontmatter.title}`} />
       <h1 style={{textAlign: "center", marginBottom: "16px"}}>{frontmatter.title}</h1>
       <div style={{marginBottom: "48px", textAlign: "center"}}>
