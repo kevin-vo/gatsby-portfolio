@@ -10,8 +10,6 @@ const contentStyle = {
 }
 
 const renderExternalLinks = (link, github) => {
-  console.log(link)
-  console.log(github)
   const linkRender = (
     <h4 style={{marginBottom: "8px"}}>
       <i className="fas fa-external-link-alt">:</i>{' '}

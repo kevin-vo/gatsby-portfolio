@@ -6,6 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
+        filter: {fileAbsolutePath: {regex: "/content/projects/.*\\\\.md$/"}}
         limit: 1000
       ) {
         edges {
@@ -27,7 +28,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.path,
       component: projectTemplate,
-      context: {}, // additional data can be passed via context
+      context: {layout: "projects"}, // additional data can be passed via context
     })
   })
+}
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+
+  if (page.path.match(/projects/)) {
+    page.context.layout = "projects"
+    createPage(page)
+  } else if (page.path.match(/blog/)) {
+    page.context.layout = "blog"
+    createPage(page)
+  }
 }
