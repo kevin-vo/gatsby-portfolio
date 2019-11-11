@@ -1,11 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Header from "../components/Header"
 import SEO from "../components/seo"
 
 const contentStyle = {
-  maxHeight: "initial",
-  paddingTop: "32px",
   background: "rgba(0, 0, 0, 0.7)",
 }
 
@@ -47,23 +44,18 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <React.Fragment>
+    <div style={contentStyle}>
       <SEO title={`Kevin Vo | ${frontmatter.title}`} />
-      <Header />
-      <div className="main">
-        <div className="content" style={contentStyle}>
-          <h1 style={{textAlign: "center", marginBottom: "16px"}}>{frontmatter.title}</h1>
-          <div style={{marginBottom: "48px", textAlign: "center"}}>
-            {renderExternalLinks(frontmatter.link, frontmatter.github)}
-            Technologies: {frontmatter.technologies.join(", ")}
-          </div>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </div>
+      <h1 style={{textAlign: "center", marginBottom: "16px"}}>{frontmatter.title}</h1>
+      <div style={{marginBottom: "48px", textAlign: "center"}}>
+        {renderExternalLinks(frontmatter.link, frontmatter.github)}
+        Technologies: {frontmatter.technologies.join(", ")}
       </div>
-    </React.Fragment>
+      <div
+        className="blog-post-content"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+  </div>
 
   )
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from "../components/Header"
 import {Link} from 'gatsby'
+import './projectsLayout.css'
 
 class ProjectsLayout extends Component {
 
@@ -19,8 +20,9 @@ class ProjectsLayout extends Component {
               <Link className="animated" to="/projects/mobile/">MOBILE</Link>
               <Link className="animated" to="/contact/misc/">MISC</Link>
             </div>
-
-            {children}
+            <div style={{paddingLeft: "32px"}}>
+              {children}
+            </div>
           </div>
         </div>
       </React.Fragment>
