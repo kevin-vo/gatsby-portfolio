@@ -3,8 +3,11 @@ title: ACM Repairs
 date: 2019-11-07T02:34:41.870Z
 path: /projects/acm-repairs
 link: 'https://acmrepairs.com/'
-github: .
+github: ''
 thumbnail: /img/logo512.png
+tags:
+  - featured
+  - web
 color: '#69beff'
 description: Business website for the HVAC and appliance repair company ACM Repairs.
 technologies:
