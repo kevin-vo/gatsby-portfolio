@@ -49,6 +49,7 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-json`,
+    `gatsby-transformer-remark`,
   ],
   developMiddleware: app => {
     app.use(
