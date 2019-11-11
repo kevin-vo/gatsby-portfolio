@@ -5,9 +5,6 @@ import SEO from "../components/seo"
 import "./styles/projects.css"
 import ContentGrid from "../components/ContentGrid"
 
-
-
-
 const Projects = () => {
   const pageQuery = useStaticQuery(graphql`
     query {
@@ -37,11 +34,11 @@ const Projects = () => {
       <div className="main" id="projects">
         <div className="content" style={{maxHeight: "initial"}}>
           <div className="links">
-            <Link className="animated" to="/">ALL</Link>
-            <Link style={{marginBottom: "16px"}} className="animated" to="/projects/">FEATURED</Link>
-            <Link className="animated" to="/contact/">WEB</Link>
-            <Link className="animated" to="/contact/">MOBILE</Link>
-            <Link className="animated" to="/contact/">MISC</Link>
+            <Link className="animated" to="/projects/">ALL</Link>
+            <Link style={{marginBottom: "16px"}} className="animated" to="/projects/featured/">FEATURED</Link>
+            <Link className="animated" to="/projects/web/">WEB</Link>
+            <Link className="animated" to="/projects/mobile/">MOBILE</Link>
+            <Link className="animated" to="/contact/misc/">MISC</Link>
           </div>
 
           <ContentGrid dataArray={pageQuery.allMarkdownRemark.edges}/>
