@@ -1,13 +1,20 @@
 ---
 title: ACM Repairs
 date: 2019-11-07T02:34:41.870Z
-path: /acm-repairs
+path: /projects/acm-repairs
+link: 'https://acmrepairs.com/'
+github: .
 thumbnail: /img/logo512.png
 color: '#69beff'
-description: ReactJS netlify netlify-cms netlify-functions mailgun mapboxGL
+description: Business website for the HVAC and appliance repair company ACM Repairs.
+technologies:
+  - ReactJS
+  - netlify
+  - netlify-cms
+  - netlify-functions
+  - mailgun
+  - mapboxGL
 ---
-<https://acmrepairs.com/>
-
 Business website for the HVAC and Appliance repair company ACM Repairs.
 
 ![page-gif](https://i.imgur.com/zhUDhTS.gif)
