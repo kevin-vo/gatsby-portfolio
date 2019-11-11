@@ -9,6 +9,40 @@ const contentStyle = {
   background: "rgba(0, 0, 0, 0.7)",
 }
 
+const renderExternalLinks = (link, github) => {
+  console.log(link)
+  console.log(github)
+  const linkRender = (
+    <h4 style={{textAlign: "center", marginBottom: "8px"}}>
+      <i className="fas fa-external-link-alt">:</i>{' '}
+        <a href={link} target="_blank" rel="noopener noreferrer" >
+          {link}
+        </a>
+    </h4>
+  )
+
+  const githubRender = (
+    <h4 style={{textAlign: "center", marginBottom: "8px"}}>
+      <i className="fab fa-github">:</i>{' '}
+        <a href={github} target="_blank" rel="noopener noreferrer" >
+          Github Repo
+        </a>
+    </h4>
+  )
+  if (link && github) {
+    return (
+      <React.Fragment>
+        {linkRender}
+        {githubRender}
+      </React.Fragment>
+    )
+  } else if (link) {
+    return (linkRender)
+  } else if (github){
+    return(githubRender)
+  }
+}
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -20,7 +54,10 @@ export default function Template({
       <Header />
       <div className="main">
         <div className="content" style={contentStyle}>
-          <h1 style={{textAlign: "center"}}>{frontmatter.title}</h1>
+          <h1 style={{textAlign: "center", marginBottom: "16px"}}>{frontmatter.title}</h1>
+          <div style={{marginBottom: "48px"}}>
+            {renderExternalLinks(frontmatter.link, frontmatter.github)}
+          </div>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -39,6 +76,8 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        link
+        github
       }
     }
   }

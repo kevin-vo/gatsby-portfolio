@@ -22,9 +22,9 @@ const thumbnailContainerStyle = (src) => {
 }
 
 const Project = (node) => {
-  const {title, thumbnail} = node;
+  const {title, thumbnail, path} = node;
   return(
-    <Link key={title} className="cell" to={"/"}>
+    <Link key={title} className="cell" to={path}>
       <div className="thumbnail-container" style={thumbnailContainerStyle(thumbnail)}/>
     </Link>
   )
@@ -37,8 +37,8 @@ const FeaturedProject = () => {
         edges {
           node {
             title
-            description
             thumbnail
+            path
           }
         }
       }

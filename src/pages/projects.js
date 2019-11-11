@@ -17,6 +17,10 @@ const Projects = () => {
               title
               date
               path
+              link
+              github
+              tags
+              technologies
               color
               description
               thumbnail
