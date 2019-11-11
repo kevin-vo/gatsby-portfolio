@@ -43,14 +43,21 @@ collections:
         name: "link"
         widget: "string"
         hint: "External link to project"
+        required: false
       - label: "Github"
         name: "github"
         widget: "string"
         hint: "Github link to project"
+        required: false
       - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"
         allow_multiple: false
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        options: ["featured", "web", "mobile", "misc"]
+        multiple: true
       - label: "Color Theme"
         name: "color"
         widget: "string"
