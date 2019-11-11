@@ -17,7 +17,8 @@ collections:
       - label: "Path"
         name: "path"
         widget: "string"
-        hint: "Relative path (ex. '/post-one')"
+        hint: "Relative path (ex. '/blog/post-one')"
+        default: "/blog/"
       - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"
@@ -36,7 +37,16 @@ collections:
       - label: "Path"
         name: "path"
         widget: "string"
-        hint: "Relative path (ex. '/project-one')"
+        hint: "Relative path (ex. '/projects/project-one')"
+        default: "/projects/"
+      - label: "Link"
+        name: "link"
+        widget: "string"
+        hint: "External link to project"
+      - label: "Github"
+        name: "github"
+        widget: "string"
+        hint: "Github link to project"
       - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"
@@ -47,6 +57,7 @@ collections:
         default: "#000000"
         hint: "Hex format (#FFFFFF)"
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Technologies", name: "technologies", widget: "list"}
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "featured"
