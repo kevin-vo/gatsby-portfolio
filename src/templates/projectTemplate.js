@@ -13,7 +13,7 @@ const renderExternalLinks = (link, github) => {
   console.log(link)
   console.log(github)
   const linkRender = (
-    <h4 style={{textAlign: "center", marginBottom: "8px"}}>
+    <h4 style={{marginBottom: "8px"}}>
       <i className="fas fa-external-link-alt">:</i>{' '}
         <a href={link} target="_blank" rel="noopener noreferrer" >
           {link}
@@ -22,7 +22,7 @@ const renderExternalLinks = (link, github) => {
   )
 
   const githubRender = (
-    <h4 style={{textAlign: "center", marginBottom: "8px"}}>
+    <h4 style={{marginBottom: "8px"}}>
       <i className="fab fa-github">:</i>{' '}
         <a href={github} target="_blank" rel="noopener noreferrer" >
           Github Repo
@@ -55,8 +55,9 @@ export default function Template({
       <div className="main">
         <div className="content" style={contentStyle}>
           <h1 style={{textAlign: "center", marginBottom: "16px"}}>{frontmatter.title}</h1>
-          <div style={{marginBottom: "48px"}}>
+          <div style={{marginBottom: "48px", textAlign: "center"}}>
             {renderExternalLinks(frontmatter.link, frontmatter.github)}
+            Technologies: {frontmatter.technologies.join(", ")}
           </div>
           <div
             className="blog-post-content"
@@ -78,6 +79,7 @@ export const pageQuery = graphql`
         title
         link
         github
+        technologies
       }
     }
   }
