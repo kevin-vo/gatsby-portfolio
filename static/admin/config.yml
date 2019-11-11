@@ -74,6 +74,13 @@ collections:
         searchFields: ["title"]
         valueField: "title"
         displayFields: ["title"]
+      - label: "Path"
+        name: "path"
+        widget: "relation"
+        collection: "projects"
+        searchFields: ["title"]
+        valueField: "path"
+        displayFields: ["path"]
       - { label: "Description", name: "description", widget: "string" }
       - label: "Thumbnail"
         name: "thumbnail"
