@@ -1,0 +1,18 @@
+#blog .content {
+  padding-top: 32px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#blog .children {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}

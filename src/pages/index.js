@@ -28,7 +28,7 @@ const IndexPage = () => (
       </div>
       <div className="links">
         <AnchorLink className="animated" href='#about'>ABOUT</AnchorLink>
-        <Link className="animated" to="/">BLOG</Link>
+        <Link className="animated" to="/blog/">BLOG</Link>
         <Link className="animated" to="/projects/featured/">PROJECTS</Link>
         <Link className="animated" to="/contact/">CONTACT</Link>
       </div>

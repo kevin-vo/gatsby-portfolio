@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from "../components/Header"
 import SEO from "../components/seo"
 import {Link} from 'gatsby'
-import './projectsLayout.css'
+import './styles/projectsLayout.css'
 import {Accordion, Card, Button} from "react-bootstrap"
 
 const linkActiveStyle = {

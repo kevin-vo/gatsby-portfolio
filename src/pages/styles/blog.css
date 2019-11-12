@@ -1,0 +1,33 @@
+.blog-container {
+  display: flex;
+}
+
+.blog-text-container {
+  width: 262.95px;
+  margin-right: 32px;
+}
+
+.blog-text-container h1 {
+  font-size: 50px;
+  margin-bottom: 8px;
+}
+
+.blog-text-container p {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .blog-text-container {
+    width: 181.95px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-container {
+    display: block;
+  }
+  .blog-text-container {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
