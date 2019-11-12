@@ -2,10 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
 
-const contentStyle = {
-  background: "rgba(0, 0, 0, 0.7)",
-}
-
 const renderExternalLinks = (link, github) => {
   const linkRender = (
     <h4 style={{marginBottom: "8px"}}>

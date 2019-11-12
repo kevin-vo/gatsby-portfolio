@@ -8,7 +8,7 @@ const Projects = () => {
     query {
       allMarkdownRemark(
         sort: {order: DESC, fields: [frontmatter___date]},
-        filter: {fileAbsolutePath: {regex: "/content/projects/.*\\\\.md$/"}, frontmatter: {tags: {in: "featured"}}}) {
+        filter: {fileAbsolutePath: {regex: "/content/projects/.*\\\\.md$/"}, frontmatter: {tags: {in: "web"}}}) {
         edges {
           node {
             frontmatter {

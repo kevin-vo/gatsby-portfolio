@@ -6,8 +6,7 @@ link: 'https://acmrepairs.com/'
 github: ''
 thumbnail: /img/logo512.png
 tags:
-  - featured
-  - web
+  - mobile
 color: '#69beff'
 description: Business website for the HVAC and appliance repair company ACM Repairs.
 technologies:

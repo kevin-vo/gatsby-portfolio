@@ -12,10 +12,6 @@ const linkActiveStyle = {
 
 class ProjectsLayout extends Component {
 
-  test = () => {
-    console.log("hi")
-  }
-
   render() {
     const {children} = this.props
     return (
@@ -38,7 +34,7 @@ class ProjectsLayout extends Component {
                       <Link activeStyle={linkActiveStyle} style={{marginBottom: "16px"}} className="animated" to="/projects/featured/">FEATURED</Link>
                       <Link activeStyle={linkActiveStyle} className="animated" to="/projects/web/">WEB</Link>
                       <Link activeStyle={linkActiveStyle} className="animated" to="/projects/mobile/">MOBILE</Link>
-                      <Link activeStyle={linkActiveStyle} className="animated" to="/contact/misc/">MISC</Link>
+                      <Link activeStyle={linkActiveStyle} className="animated" to="/projects/misc/">MISC</Link>
                     </div>
                   </Card.Body>
                 </Accordion.Collapse>
@@ -51,7 +47,7 @@ class ProjectsLayout extends Component {
               <Link activeStyle={linkActiveStyle} style={{marginBottom: "16px"}} className="animated" to="/projects/featured/">FEATURED</Link>
               <Link activeStyle={linkActiveStyle} className="animated" to="/projects/web/">WEB</Link>
               <Link activeStyle={linkActiveStyle} className="animated" to="/projects/mobile/">MOBILE</Link>
-              <Link activeStyle={linkActiveStyle} className="animated" to="/contact/misc/">MISC</Link>
+              <Link activeStyle={linkActiveStyle} className="animated" to="/projects/misc/">MISC</Link>
             </div>
             <div className="children">
               {children}
