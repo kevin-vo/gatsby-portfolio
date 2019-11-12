@@ -28,14 +28,8 @@ class Header extends Component {
               style={{margin: 0, height: "100%"}}
               src={require("../images/kv_transparent.svg")} alt="logo"/>
           </Link>
+
           <div style={{height: "100%", float: "right", display: "flex", alignItems: "center"}}>
-            {this.props.backButton ? (
-              <Link to={this.props.backButton} style={{color: "white", marginRight: "24px"}}>
-                <i className="fas fa-arrow-left fa-lg"></i>
-              </Link>
-            ) :
-              (null)
-            }
             <Link to="/" style={{color: "white"}}>
               <i className="fas fa-times fa-lg"></i>
             </Link>

@@ -13,4 +13,61 @@
   align-items: flex-start;
   line-height: 1;
   width: 262.95px;
+  margin-right: 32px;
+}
+
+#projects .accordion {
+  display: none;
+}
+
+#projects .children {
+  width: 100%;
+}
+
+#projects .card, #projects .card-header, #projects .card-body {
+  padding: 0 0 32px 0;
+  background: none;
+  border: 0;
+}
+
+#projects .card .btn-link {
+  padding: 0;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#projects .card .btn-link:hover {
+  text-decoration: none;
+}
+
+#projects .card h1 {
+  font-size: 24px;
+  margin: 0;
+  text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+  #projects .links {
+    width: 181.95px;
+  }
+  #projects .links .animated {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #projects .links#md{
+    display: none;
+  }
+  #projects .content {
+    flex-direction: column;
+  }
+  #projects .accordion {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
 }

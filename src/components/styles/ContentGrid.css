@@ -48,3 +48,12 @@
 .grid-link {
   margin-bottom: 16px;
 }
+
+@media screen and (max-width: 500px) {
+  .grid-thumbnail-container {
+    height: 300px;
+  }
+  .grid-thumbnail img {
+    height: 187.5px;
+  }
+}
