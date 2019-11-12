@@ -5,6 +5,7 @@
 .blog-text-container {
   width: 262.95px;
   margin-right: 32px;
+  flex-shrink: 0;
 }
 
 .blog-text-container h1 {
