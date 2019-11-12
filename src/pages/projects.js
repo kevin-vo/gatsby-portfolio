@@ -1,6 +1,5 @@
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby'
-import SEO from "../components/seo"
 import ContentGrid from "../components/ContentGrid"
 
 const Projects = () => {
@@ -30,10 +29,7 @@ const Projects = () => {
   `)
 
   return (
-    <React.Fragment>
-      <SEO title="Kevin Vo | Projects" />
-      <ContentGrid dataArray={pageQuery.allMarkdownRemark.edges}/>
-    </React.Fragment>
+    <ContentGrid dataArray={pageQuery.allMarkdownRemark.edges}/>
   )
 
 }

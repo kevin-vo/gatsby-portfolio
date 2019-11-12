@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from "../components/Header"
+import SEO from "../components/seo"
 import {Link} from 'gatsby'
 import './projectsLayout.css'
 import {Accordion, Card, Button} from "react-bootstrap"
@@ -16,6 +17,7 @@ class ProjectsLayout extends Component {
     const {children} = this.props
     return (
       <React.Fragment>
+        <SEO title="Kevin Vo | Projects" />
         <Header />
         <div className="main" id="projects">
           <div className="content" style={{maxHeight: "initial"}}>
