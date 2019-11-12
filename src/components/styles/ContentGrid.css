@@ -40,7 +40,14 @@
   align-items: center;
 }
 
-.grid-thumbnail img {
+.grid-thumbnail img.fluid {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid-thumbnail img.fitted {
   height: 250px;
   margin: 0;
 }
@@ -53,7 +60,7 @@
   .grid-thumbnail-container {
     height: 300px;
   }
-  .grid-thumbnail img {
+  .grid-thumbnail img.fitted {
     height: 187.5px;
   }
 }

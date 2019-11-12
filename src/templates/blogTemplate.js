@@ -8,10 +8,10 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div>
+    <div style={{maxWidth: "720px", margin: "0 auto"}}>
       <SEO title={`Kevin Vo | ${frontmatter.title}`} />
-      <h1 style={{textAlign: "center", marginBottom: "16px"}}>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
+      <h1 style={{marginBottom: "16px"}}>{frontmatter.title}</h1>
+      <h4 style={{marginBottom: "48px", color: "#444"}}>{frontmatter.date}</h4>
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}

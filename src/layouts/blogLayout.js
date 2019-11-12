@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import Header from "../components/Header"
 import SEO from "../components/seo"
-import {Link} from 'gatsby'
 import './styles/blogLayout.css'
-
-const linkActiveStyle = {
-  color: "white",
-  paddingLeft: "10px",
-  textDecoration: "none",
-}
 
 class ProjectsLayout extends Component {
 

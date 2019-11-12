@@ -43,7 +43,7 @@ const Projects = () => {
           {' '}for any questions or comments.
         </p>
       </div>
-      <ContentGrid dataArray={pageQuery.allMarkdownRemark.edges}/>
+      <ContentGrid blog dataArray={pageQuery.allMarkdownRemark.edges}/>
     </div>
   )
 

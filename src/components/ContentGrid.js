@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 
 class ContentGrid extends Component {
 
-  getThumbnailStyle = (color, thumbnail) => {
-    return(
+  getThumbnailStyle = (color) => {
+    return (
       {backgroundColor: color,}
     )
   }
@@ -16,8 +16,12 @@ class ContentGrid extends Component {
       <div key={title} className="grid-cell">
         <Link className="grid-link" to={path}>
           <div className="grid-thumbnail-container">
-            <div className="grid-thumbnail" style={this.getThumbnailStyle(color, thumbnail)}>
-              <img src={require("../../static" + thumbnail)} alt="thumbnail-img"/>
+            <div className="grid-thumbnail" style={this.getThumbnailStyle(color)}>
+              {(this.props.blog ?
+                <img className="fluid" src={require("../../static" + thumbnail)} alt="thumbnail-img"/>
+                :
+                <img className="fitted" src={require("../../static" + thumbnail)} alt="thumbnail-img"/>
+              )}
             </div>
           </div>
         </Link>
