@@ -48,7 +48,7 @@
 }
 
 .grid-thumbnail img.fitted {
-  height: 250px;
+  max-height: 250px;
   margin: 0;
 }
 
@@ -61,6 +61,6 @@
     height: 300px;
   }
   .grid-thumbnail img.fitted {
-    height: 187.5px;
+    max-height: 187.5px;
   }
 }
