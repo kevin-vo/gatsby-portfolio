@@ -1,4 +1,4 @@
-<a href=https://vokev.in/><img src="https://d33wubrfki0l68.cloudfront.net/482b495ecb5d6e73fa417070d52616135b33cc5b/e113a/static/kv_transparent-d489735b89556ed891dbdeca6c242f82.svg" alt="alt text" width="150"/></a>
+<a href=https://vokev.in/><img src="https://i.imgur.com/ePZo4Z3.jpg" alt="alt text" width="250"/></a>
 # Gatsby Portfolio
 >https://vokev.in/
 
