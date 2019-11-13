@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "gatsby"
 import './styles/footer.css'
-
+import resume from "../../content/resume.json"
 const Footer = () => (
   <div className="footer">
     <Link to="/">
@@ -35,7 +35,7 @@ const Footer = () => (
       <a href="mailto:hey@vokev.in">
         <button className="themed"><i className="fas fa-envelope"></i></button>
       </a>
-      <a href="/">
+      <a href={resume.file} target="_blank" rel="noopener noreferrer">
         <button className="themed"><i className="fas fa-file"></i></button>
       </a>
       <a href="https://www.instagram.com/vokev.in/" target="_blank" rel="noopener noreferrer" >
