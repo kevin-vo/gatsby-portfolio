@@ -81,8 +81,8 @@ const IndexPage = () => (
         <h2> Let's start a conversation. </h2>
         <p>
           I am currently open to freelance projects and part/full-time positions.
-          Want to hire me? Still need convincing? Want to just say hi?
-          Please reach out. I would love to make your life easier.
+          Want to hire me? Please reach out. I would love to make your life just a little
+          bit easier.
         </p>
       </div>
       <Link to="/contact/">
