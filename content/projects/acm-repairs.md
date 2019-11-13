@@ -9,7 +9,7 @@ tags:
   - featured
   - web
 color: '#69beff'
-description: Business website for the HVAC and appliance repair company ACM Repairs.
+description: Business website for the HVAC and appliance repair company ACM Repairs
 technologies:
   - ReactJS
   - netlify
