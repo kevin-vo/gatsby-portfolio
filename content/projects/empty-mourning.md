@@ -20,4 +20,4 @@ Enter Empty Mourning, a site created for a local garage band. It features access
 
 co. devs: Kevin Zaragoza, Victor Mercado
 
-Empty Mourning was an exercise to see how far vanilla html, css, and JS could be pushed... until we cheated and used JQuery and React for the navbar. Though the project unfortunately never saw itself through to the end, this project demonstrated the power of a frontend framework (through its lack thereof!).
+Empty Mourning was an exercise to see how far vanilla HTML, CSS, and JS could be pushed. We eventually bootstrapped our project with React to see how easy it was to implement a nav bar (spoilers, it was a lot easier). Though the project unfortunately never saw itself through to the end, this project showed us the power of a frontend framework (through its lack thereof!).
