@@ -6,7 +6,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bb395865-0d68-49f3-8fc3-50bf371e24e9/deploy-status)](https://app.netlify.com/sites/wonderful-lovelace-4d6f07/deploys)
 
-![page-gif](https://i.imgur.com/BFL88Wf.gif)
+![page-gif](https://i.imgur.com/RFdnygn.gif)
 
 ## Features
 ### General
