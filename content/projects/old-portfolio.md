@@ -12,4 +12,17 @@ technologies:
   - HTML
   - CSS
 ---
+The times were simpler back then. I used vanilla HTML and CSS with basic media queries for responsive sizing. 
+
 ![thumb](https://i.imgur.com/9wccGgd.gif)
+
+## Features
+
+* Social buttons
+* Projects section
+
+### Honorary Mentions:
+
+* Improperly centered tooltips
+
+This was one of the first web projects I ever took live. Here's to hoping my current portfolio becomes an "old portfolio" a couple years down the line. Stay hungry!
