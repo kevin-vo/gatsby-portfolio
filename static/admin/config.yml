@@ -93,3 +93,15 @@ collections:
         name: "thumbnail"
         widget: "image"
         allow_multiple: false
+
+  - name: "resume"
+    label: "Resume"
+    files:
+    - label: "Upload file"
+      name: "resume"
+      file: "content/resume.json"
+      create: false
+      fields:
+        - label: File
+          name: file
+          widget: file
