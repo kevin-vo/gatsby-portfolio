@@ -4,14 +4,14 @@ date: 2019-10-18T01:00:39.237Z
 path: /blog/ode-to-netlify
 thumbnail: /img/netlify-functions-thumb.jpg
 description: >-
-  Everyone loves free. And the best website hosting service is a free one. See
-  how Netlify offers functionality beyond its competitors.
+  The best hosting service is a free hosting service. See how Netlify offers
+  functionality beyond its competitors.
 ---
 ### An ode to Netlify
 
 I'll just go ahead and say it. Netlify should not be free... Yet here I am, deploying sites that continuously build from my GitHub repos, all without me paying a single dime. For that, I am eternally grateful. I now recommend using Netlify to deploy any small to medium scale projects.
 
-"Isn't there always a catch to 'free' though?" you might ask. To that question, my astute and observant readers, you are correct. To a degree.
+"Isn't there always a catch to 'free'?" you might ask. To that question, my astute and observant readers, you are correct. To a degree.
 
 ### Backstory
 
