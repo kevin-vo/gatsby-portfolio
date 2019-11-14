@@ -1,6 +1,6 @@
 ---
 title: 'Netlify: More than a static site host '
-date: 2019-11-14T02:00:39.237Z
+date: 2019-10-18T01:00:39.237Z
 path: /blog/ode-to-netlify
 thumbnail: /img/netlify-functions-thumb.jpg
 description: >-
