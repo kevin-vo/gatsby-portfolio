@@ -17,6 +17,19 @@
   margin-bottom: 8px;
 }
 
+.blog-post-content code {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.blog-post-content pre {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.blog-post-content pre code {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 @media screen and (max-width: 900px) {
   .blog-text-container {
     width: 181.95px;
