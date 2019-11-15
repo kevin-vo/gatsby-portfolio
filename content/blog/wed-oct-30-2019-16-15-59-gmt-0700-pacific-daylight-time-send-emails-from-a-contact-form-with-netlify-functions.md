@@ -1,7 +1,7 @@
 ---
 title: Send emails from a contact form with Netlify functions
 date: 2019-10-30T23:15:59.217Z
-path: /blog/
+path: /blog/contact-form-tutorial
 thumbnail: /img/contact-form-thumb.jpg
 description: >-
   It can be difficult to get started with Netlify functions. Get started with
