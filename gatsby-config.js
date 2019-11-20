@@ -50,6 +50,14 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-json`,
     `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Lato']
+        }
+      }
+    },
   ],
   developMiddleware: app => {
     app.use(
