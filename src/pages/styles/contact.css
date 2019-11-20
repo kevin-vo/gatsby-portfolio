@@ -51,9 +51,17 @@ button.themed {
   transition: all 0.3s;
 }
 
+button.themed svg {
+  transition: all 0.3s;
+}
+
 button.themed:hover {
   color: black;
   background: white;
+}
+
+button.themed:hover > svg {
+  fill: black;
 }
 
 button.themed:focus {

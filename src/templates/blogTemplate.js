@@ -12,7 +12,7 @@ export default function Template({
       <SEO title={`Kevin Vo | ${frontmatter.title}`} />
       <h1 style={{marginBottom: "16px"}}>{frontmatter.title}</h1>
       <h4 style={{marginBottom: "48px", color: "#444"}}>{frontmatter.date}</h4>
-      <img style={{width: "100%"}} src={require("../../static" + frontmatter.thumbnail)}/>
+      <img style={{width: "100%"}} src={require("../../static" + frontmatter.thumbnail)} alt="blog-thumbnail"/>
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
